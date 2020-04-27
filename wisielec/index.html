@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Liczenie liter w wyrazach</title>
+        <script src="assets/scripts/main.js"></script>
+        <link rel="stylesheet" href="assets/styles/main.css" />
+    </head>
+    <body>
+        <div class="content" id="contentContainer">
+            <div class="title">
+                <h1>
+                    Wisielec ze słowami zgłoszonymi na Młodzieżowe Słowo Roku
+                    2020
+                </h1>
+            </div>
+            <div class="menu" id="refresh-container">
+                <button
+                    class="menu menu-button pure-material-button-contained"
+                    id="refresh"
+                >
+                    Nowe słowo
+                </button>
+                <input
+                    type="text"
+                    id="letter-input"
+                    class="pure-material-button-contained letter-input"
+                />
+            </div>
+            <div class="result" id="result">
+                <h1 id="endMessage"></h1>
+                <input
+                    type="text"
+                    class="pure-material-button-contained word"
+                    id="wordresult"
+                    disabled
+                /></input>
+                <div id="canvasContainer"><canvas id="szubienica" width="1000px" height="1000px"></canvas></div>
+            </div>
+        </div>
+    </body>
+</html>
