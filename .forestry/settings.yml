@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: docs
+  label: test dir
+  create: all
+  match: "**/*.md"
+  new_doc_ext: ".md"
 - type: heading
   label: test
 - type: document
